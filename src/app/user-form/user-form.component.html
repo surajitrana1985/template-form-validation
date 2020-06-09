@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>User Form</h1>
+    <form #form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" id="name" [(ngModel)]="user.name" appErrorValidator [validateError]="{show: countSubmit > 0, message: 'User not entered'}" required>
+        </div>
+        <div class="form-group">
+            <label for="alterEgo">Email</label>
+            <input type="text" class="form-control" name="email" id="email" [(ngModel)]="user.email" appErrorValidator [validateError]="{show: countSubmit > 0, message: 'Email not entered'}" required>
+        </div>
+        <button type="submit" class="btn btn-success" (click)="onSubmit(form)" appErrorValidator>Submit</button>
+    </form>
+</div>

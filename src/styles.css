@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+label {
+    min-width: 80px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 400px;
+    padding: 10px 25px;
+    border: 1px solid #fff;
+    background: cornflowerblue;
+    border-bottom-style: double;
+}
+
+body {
+    background-color: darkgray;
+}
+
+.inline-error {
+    background: #800;
+    color: #fff;
+    padding: 2px 10px;
+    margin: auto 7px;
+    position: absolute;
+}
